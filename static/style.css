@@ -119,3 +119,22 @@ pre {
         font-size: 2rem;
     }
 }
+
+/* Muotoillaan iframe-container responsiiviseksi */
+.form-container {
+    position: relative;
+    width: 100%; /* Käytä 100% leveydestä */
+    padding-top: 115%; /* Suhteellinen korkeus, esim. 75% leveydestä */
+    overflow: hidden;
+  }
+  
+  /* Sijoitetaan iframe responsiiviseen kehykseen */
+  .form-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Skaalaa leveys 100% */
+    height: 100%; /* Skaalaa korkeus suhteessa */
+    border: 0; /* Ei kehyksiä */
+  }
+  
