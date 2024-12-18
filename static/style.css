@@ -1,0 +1,121 @@
+/* Scandinavian-inspired Theme for GitHub Pages */
+:root {
+    --background-color: #f7f7f7; /* Soft white-gray background */
+    --primary-color: #2f4f4f;   /* Dark slate gray for text */
+    --secondary-color: #708090; /* Slate gray for secondary text */
+    --accent-color: #7e8e9f;    /* Lighter crisp blue as an accent */
+    --link-color: #5e81ac;      /* Muted blue for links */
+    --border-color: #dcdcdc;    /* Light gray for borders */
+    --font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean sans-serif font */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 3px solid var(--border-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+main h2 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1.5rem;
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #bf616a;
+}
+
+code {
+    background: #eceff4;
+    color: var(--primary-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background: #eceff4;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
